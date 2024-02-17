@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <Main>
+        <h1 class="TituloPrincipal">ALGORITIMO DE KRUSKAL</h1>
+        <div class="mainContainer">
+
+            
+            <div class="Container_Inputs"  >
+                <h1 class="LinhaEmBaixo">Teoria Dos Grafos</h1>
+                <p >CRIE UM GRAFO</p>
+                <input type="number" id="" class="NdeVerticesInput" placeholder="Defina o N° De Vertice">
+                <button type="submit" onclick="CriarGrafo()">Enviar</button>
+            </div>
+            <div class="AddAresta" style="display: none;" >
+                <h1 class="LinhaEmBaixo">CRIAR ARESTA</h1>
+                <input type="number" class="InputOrigem" placeholder="Vertice Origem">
+                <input type="number" class="InputDestino" placeholder="Vertice Destino">
+                <input type="number" class="InputPeso" placeholder="Aresta Peso">
+                <button type="submit"onclick="CriarAresta()">Criar</button>
+                <button type="submit"onclick="Calcular()">Calcular Kruskal</button>
+            </div>
+            <div class="Vertices_Criados" style="display: none;" >
+                <H1>ARESTAS CRIADOS</H1>
+                
+                
+            </div>
+            <div class="VerticesDisponiveis" style="display: none;" >
+                <H1>VERTICES DISPONIVEIS</H1>
+                
+            </div>
+            <div class="Vertices_Criados T2" style="display: none;" >
+                
+                
+                
+            </div>
+            
+            
+        </div>
+        <a href="https://github.com/NeemiasHD" target="_blank" class="Creditos">Criado Por: Neemias Claudio</a>
+    </Main>
+    
+</body>
+</html>
+<script src="Kruskal.js"></script>

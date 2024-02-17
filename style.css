@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --Amarelo: rgba(53, 161, 255, 0.722);
+  --Cinza: rgba(0, 0, 0, 0.72);
+}
+body {
+  background-image: url("https://acm-itea.org/wp-content/uploads/2021/04/Grafos.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+p {
+  color: white;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(2px);
+}
+.mainContainer {
+  background-color: var(--Cinza);
+  padding: 20px;
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  position: relative;
+  backdrop-filter: blur(2px);
+}
+.Container_Inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.Container_Inputs p {
+  font-size: 10px;
+  text-align: center;
+}
+
+button {
+  width: 200px;
+  background-color: var(--Amarelo);
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+input {
+  text-align: center;
+  width: 200px;
+}
+input {
+  outline: none;
+}
+
+.AddAresta {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.Vertices_Criados {
+  position: absolute;
+  left: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 20px;
+  width: 200px;
+  background-color: var(--Amarelo);
+  text-align: center;
+  border-radius: 90px;
+  color: white;
+}
+.VerticeCriadosContainer {
+  background-color: black;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 300px;
+  border: 1px solid var(--Cinza);
+  justify-content: center;
+}
+.VerticeCriadosContainer p {
+  font-size: 10px;
+}
+.VerticesDisponiveis {
+  position: absolute;
+  right: 350px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.VerticesDisponiveis h1 {
+  font-size: 20px;
+  width: 300px;
+}
+.VerticesDisponiveis p {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.Vertices_Criados.T2 H1 {
+  font-size: 10px;
+  width: 200px;
+}
+.Vertices_Criados.T2 {
+  left: 0px;
+  top: 325px;
+}
+
+.TituloPrincipal {
+  position: absolute;
+  top: 20px;
+  width: 600px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  background-color: var(--Amarelo);
+}
+
+.LinhaEmBaixo {
+  background-color: transparent;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.LinhaEmBaixo::before {
+  content: "";
+  background-color: var(--Amarelo);
+  height: 3px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+.Creditos {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  color: black;
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+a:hover {
+  color: var(--Amarelo);
+}
+.TOTAL {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  text-align: center;
+  border-radius: 5px;
+}
