@@ -63,7 +63,7 @@ class Grafo {
 
         // Enviando Resultados Para o Front-End
         let pesototal = 0;
-        document.querySelector(".Vertices_Criados.T2").innerHTML +=`<H1>Resultado Melhor Caminho:</H1>`
+        document.querySelector(".Vertices_Criados.T2").innerHTML +=`<H1>Resultado Árvore Minima:</H1>`
         for (let { origem, destino, peso } of resultado) {
             pesototal+=parseInt(peso);
             document.querySelector(".Vertices_Criados.T2").innerHTML +=
