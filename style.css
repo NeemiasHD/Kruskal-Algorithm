@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 :root {
-  --Amarelo: rgba(53, 161, 255, 0.722);
+  --CorPrincipal: rgba(53, 161, 255, 0.722);
   --Cinza: rgba(0, 0, 0, 0.72);
 }
 body {
@@ -50,7 +50,7 @@ main {
 
 button {
   width: 200px;
-  background-color: var(--Amarelo);
+  background-color: var(--CorPrincipal);
   border: none;
   cursor: pointer;
   color: white;
@@ -84,7 +84,7 @@ input {
 h1 {
   font-size: 20px;
   width: 200px;
-  background-color: var(--Amarelo);
+  background-color: var(--CorPrincipal);
   text-align: center;
   border-radius: 90px;
   color: white;
@@ -137,10 +137,15 @@ h1 {
 .TituloPrincipal {
   position: absolute;
   top: 20px;
-  width: 600px;
-  font-size: 40px;
+  width: 700px;
+  font-size: 30px;
   color: rgb(255, 255, 255);
-  background-color: var(--Amarelo);
+  background-color: var(--CorPrincipal);
+  transition: all .5s;
+  cursor: pointer;
+}
+.TituloPrincipal:hover{
+  transform: scale(1.1);
 }
 
 .LinhaEmBaixo {
@@ -153,7 +158,7 @@ h1 {
 }
 .LinhaEmBaixo::before {
   content: "";
-  background-color: var(--Amarelo);
+  background-color: var(--CorPrincipal);
   height: 3px;
   bottom: 0;
   width: 100%;
@@ -171,7 +176,7 @@ a {
   transition: all 0.5s;
 }
 a:hover {
-  color: var(--Amarelo);
+  color: var(--CorPrincipal);
 }
 .TOTAL {
   width: 25px;
@@ -179,4 +184,22 @@ a:hover {
   background-color: black;
   text-align: center;
   border-radius: 5px;
+}
+h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 15px;
+  position: absolute;
+  top: 90px;
+  color: white;
+}
+h2::before {
+  content: "";
+  background-color: var(--CorPrincipal);
+  height: 3px;
+  bottom: -5px;
+  width: 100%;
+  position: absolute;
 }
