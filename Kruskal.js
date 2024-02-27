@@ -21,13 +21,13 @@ class Grafo {
         this.grafo.push(new Aresta(origem, destino, peso));//instaciando uma nova aresta para o grafo
     }
 
-    //Procurando a raiz do conjunto,
+    // função para procurar a raiz do conjunto
     encontrar(subset, i) {
         if (subset[i] == -1)
             return i;
         return this.encontrar(subset, subset[i]);
     }
-    //Unindo informações de vertice com o outro...
+    //função para unir informações de vertice com o outro...
     unir(subset, x, y) {
         let raiz_x = this.encontrar(subset, x);
         let raiz_y = this.encontrar(subset, y);
@@ -51,7 +51,7 @@ class Grafo {
             let { origem, destino, peso } = this.grafo[i++];
             let raiz_origem = this.encontrar(subset, origem); 
             let raiz_destino = this.encontrar(subset, destino);
-
+            //verificando se as raises são diferentes para que a aresta seja escolhida
             if (raiz_origem !== raiz_destino) {
                 resultado.push({ origem, destino, peso });
                 this.unir(subset, raiz_origem, raiz_destino);
