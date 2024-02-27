@@ -1,5 +1,5 @@
 
-class Aresta {
+class Aresta { //objeto aresta
     constructor(origem, destino, peso) {
         this.origem = origem;
         this.destino = destino;
@@ -18,7 +18,7 @@ class Grafo {
 
     //Adicionando Nova Aresta no proprio Grafo
     AdicionarAresta(origem, destino, peso) {
-        this.grafo.push(new Aresta(origem, destino, peso));
+        this.grafo.push(new Aresta(origem, destino, peso));//instaciando uma nova aresta para o grafo
     }
 
     //Procurando a raiz do conjunto,
